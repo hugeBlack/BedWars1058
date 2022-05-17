@@ -50,7 +50,7 @@ public class ChineseSimplified extends Language {
         yml.addDefault(Messages.REJOIN_NO_ARENA, "{prefix}&c没有可以重新加入的游戏！");
         yml.addDefault(Messages.REJOIN_DENIED, "{prefix}&c由于你队伍的床被破坏或游戏已经结束，你不能重新加入。");
         yml.addDefault(Messages.REJOIN_ALLOWED, "{prefix}&e正在重新加入&a{arena}&e！");
-        yml.addDefault(Messages.COMMAND_REJOIN_PLAYER_RECONNECTED, "{prefix}&7{player}&e重新连接！");
+        yml.addDefault(Messages.COMMAND_REJOIN_PLAYER_RECONNECTED, "{prefix}&7{player}&e重新连接。");
         yml.addDefault(Messages.COMMAND_LEAVE_DENIED_NOT_IN_ARENA, "{prefix}&c你不在一场起床战争游戏中！");
         yml.addDefault(Messages.COMMAND_LEAVE_MSG, "{prefix}&7{player}&e离开了！");
         yml.addDefault(Messages.COMMAND_NOT_ALLOWED_IN_GAME, "{prefix}&c你在游戏中不可以这么做。");
@@ -99,7 +99,7 @@ public class ChineseSimplified extends Language {
         yml.addDefault(Messages.ARENA_STATUS_START_COUNTDOWN_SUB_TITLE + "-2", "&c❷");
         yml.addDefault(Messages.ARENA_STATUS_START_COUNTDOWN_SUB_TITLE + "-1", "&c❶");
         yml.addDefault(Messages.ARENA_STATUS_START_COUNTDOWN_CANCELLED_TITLE, " ");
-        yml.addDefault(Messages.ARENA_STATUS_START_COUNTDOWN_CANCELLED_SUB_TITLE, "&c等待更多玩家.。");
+        yml.addDefault(Messages.ARENA_STATUS_START_COUNTDOWN_CANCELLED_SUB_TITLE, "&c等待更多玩家..");
         yml.addDefault(Messages.ARENA_STATUS_START_PLAYER_TITLE, "&a游戏开始");
         yml.addDefault(Messages.ARENA_STATUS_START_PLAYER_TUTORIAL, Arrays.asList(
                 "&a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
@@ -111,8 +111,8 @@ public class ChineseSimplified extends Language {
                 "&e&l                        来购买强力装备和进行升级来使自己变强！",
                 "",
                 "&a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"));
-        yml.addDefault(Messages.ARENA_JOIN_DENIED_SELECTOR, "{prefix}&c抱歉，你现在不能加入该游戏. 右键来观赛！");
-        yml.addDefault(Messages.ARENA_SPECTATE_DENIED_SELECTOR, "{prefix}&c抱歉，你现在不能观赛. 右键来加入游戏！");
+        yml.addDefault(Messages.ARENA_JOIN_DENIED_SELECTOR, "{prefix}&c抱歉，你现在不能加入该游戏。右键来观赛！");
+        yml.addDefault(Messages.ARENA_SPECTATE_DENIED_SELECTOR, "{prefix}&c抱歉，你现在不能观赛。右键来加入游戏！");
         yml.addDefault(Messages.ARENA_JOIN_DENIED_NO_PROXY, "&c抱歉，你必须通过BedWarsProxy来加入游戏。 \n&e如果你想设置游戏，你可以给予你自己 bw.setup 权限来直接进入服务器！");
         yml.addDefault(Messages.ARENA_SPECTATOR_TELEPORTER_GUI_NAME, "&8传送");
         yml.addDefault(Messages.ARENA_SPECTATOR_TELEPORTER_GUI_HEAD_NAME, "{vPrefix}{player}");
@@ -218,7 +218,7 @@ public class ChineseSimplified extends Language {
         yml.addDefault(Messages.PLAYER_DIE_RESPAWN_CHAT, "{prefix}&e将在&a{time}&e秒后重生！");
         yml.addDefault(Messages.PLAYER_DIE_RESPAWNED_TITLE, "&a已重生！");
         yml.addDefault(Messages.PLAYER_DIE_ELIMINATED_CHAT, "{prefix}&c你已被淘汰！");
-        yml.addDefault(Messages.PLAYER_HIT_BOW, "{prefix}{TeamColor}{PlayerName}&7还有 &c{amount}&7❤");
+        yml.addDefault(Messages.PLAYER_HIT_BOW, "{prefix}{TeamColor}{PlayerName}&7还有&e{amount}&c❤");
         yml.addDefault(Messages.GAME_END_GAME_OVER_PLAYER_TITLE, "&c&l游戏结束！");
         yml.addDefault(Messages.GAME_END_VICTORY_PLAYER_TITLE, "&6&l胜利！");
         yml.addDefault(Messages.GAME_END_TEAM_WON_CHAT, "{prefix}{TeamColor}{TeamName}&a赢得了这场游戏！");
@@ -289,8 +289,8 @@ public class ChineseSimplified extends Language {
         addDefaultStatsMsg(yml, "beds-destroyed", "&6破坏床数", "&f{bedsDestroyed}");
         addDefaultStatsMsg(yml, "first-play", "&6首次游玩", "&f{firstPlay}");
         addDefaultStatsMsg(yml, "last-play", "&6上次游玩", "&f{lastPlay}");
-        addDefaultStatsMsg(yml, "games-played", "&6总场数", "&f{gamesPlayed}");
-        yml.addDefault(Messages.SCOREBOARD_DEFAULT_WAITING, Arrays.asList("&f&l起床战争", "&7{date} &8{server}", "", "&f地图： &a{map}", "", "&f玩家数： &a{on}/{max}", "", "&f等待中..。", "", "&f模式： &a{group}", "&f版本： &7{version}", "", "&e{server_ip}"));
+        addDefaultStatsMsg(yml, "games-played", "&6总游玩场数", "&f{gamesPlayed}");
+        yml.addDefault(Messages.SCOREBOARD_DEFAULT_WAITING, Arrays.asList("&f&l起床战争", "&7{date} &8{server}", "", "&f地图： &a{map}", "", "&f玩家数： &a{on}/{max}", "", "&f等待中...", "", "&f模式： &a{group}", "&f版本： &7{version}", "", "&e{server_ip}"));
         yml.addDefault(Messages.SCOREBOARD_DEFAULT_STARTING, Arrays.asList("&f&l起床战争", "&7{date} &8{server}", "", "&f地图： &a{map}", "", "&f玩家数： &a{on}/{max}", "", "&f &a{time} &f秒后开始", "", "&f模式： &a{group}", "&f模式： &7{version}", "", "&e{server_ip}"));
         yml.addDefault(Messages.SCOREBOARD_DEFAULT_PLAYING, Arrays.asList("&e&l起床战争", "&7{date}", "", "&f{nextEvent} - &a{time}", "", "{team}", "{team}", "{team}", "{team}", "{team}", "{team}", "{team}", "{team}", "", "&e{server_ip}"));
         yml.addDefault("scoreboard.Doubles.playing", Arrays.asList("&e&l起床战争", "&7{date}", "", "&f{nextEvent} - &a{time}", "", "{team}", "{team}", "{team}", "{team}", "{team}", "{team}", "{team}", "{team}", "{team}", "{team}", "{team}", "{team}", "{team}", "{team}", "{team}", "{team}", "", "&e{server_ip}"));
@@ -298,7 +298,7 @@ public class ChineseSimplified extends Language {
         yml.addDefault("scoreboard.4v4v4v4.playing", Arrays.asList("&e&l起床战争", "&7{date}", "", "&f{nextEvent} - &a{time}", "", "{team}", "{team}", "{team}", "{team}", "", "&f击杀： &a{kills}", "&f最终击杀： &a{finalKills}", "&f破坏床： &a{beds}", "", "&e{server_ip}"));
         yml.addDefault(Messages.SCOREBOARD_LOBBY, Arrays.asList("&6&l起床战争,&4&l起&6&l床战争,&6&l起&4&l床&6&l战争,&6&l起床&4&l战&6&l争,&6&l起床战&4&l争,&6&l起床战争", "&f等级： {level}", "", "&f进度： &a{currentXp}&7/&b{requiredXp}", "{progress}", "", "&7{player}", "", "&f金币： &a{money}", "", "&f总胜场： &a{wins}", "&f总击杀： &a{kills}", "", "&e{server_ip}"));
         yml.addDefault("shop-items-messages.inventory-name", "&8快速购买");
-        yml.addDefault("shop-items-messages.quick-buy-add-inventory-name", "&8添加到快速购买..。");
+        yml.addDefault("shop-items-messages.quick-buy-add-inventory-name", "&8添加到快速购买...");
         yml.addDefault(Messages.SHOP_INSUFFICIENT_MONEY, "{prefix}&c你没有足够的{currency}！ 还需要{amount}个{currency}！");
         yml.addDefault(Messages.SHOP_NEW_PURCHASE, "{prefix}&a购买&6{item}");
         yml.addDefault(Messages.SHOP_ALREADY_BOUGHT, "{prefix}&c你已经购买过了！");
