@@ -61,7 +61,7 @@ public class ChineseSimplified extends Language {
         yml.addDefault(Messages.COMMAND_PARTY_INVITE_SENT, "{prefix}&e已向 &7{player} &e发送邀请&6。");
         yml.addDefault(Messages.COMMAND_PARTY_INVITE_SENT_TARGET_RECEIVE_MSG, "{prefix}&b{player} &e邀请你加入队伍！ &o&7(点击接受)");
         yml.addDefault(Messages.COMMAND_PARTY_INVITE_DENIED_CANNOT_INVITE_YOURSELF, "{prefix}&c你不可以邀请你自己！");
-        yml.addDefault(Messages.COMMAND_PARTY_INVITE_DENIED_PLAYER_OFFLINE, "{prefix}&7{player} &e不在线！");
+        yml.addDefault(Messages.COMMAND_PARTY_INVITE_DENIED_PLAYER_OFFLINE, "{prefix}&7{player}&e不在线！");
         yml.addDefault(Messages.COMMAND_PARTY_ACCEPT_DENIED_NO_INVITE, "{prefix}&c没有可以接受的队伍邀请！");
         yml.addDefault(Messages.COMMAND_PARTY_ACCEPT_DENIED_ALREADY_IN_PARTY, "{prefix}&e你已经在队伍中了！");
         yml.addDefault(Messages.COMMAND_PARTY_INSUFFICIENT_PERMISSIONS, "{prefix}&c只有队长才可以这么做！");
@@ -76,7 +76,7 @@ public class ChineseSimplified extends Language {
         yml.addDefault(Messages.COMMAND_PARTY_REMOVE_DENIED_TARGET_NOT_PARTY_MEMBER, "{prefix}&7{player}&e不在你的队伍中！");
         yml.addDefault(Messages.COMMAND_FORCESTART_NOT_IN_GAME, "&c▪ &7你不在游戏中！");
         yml.addDefault(Messages.COMMAND_FORCESTART_SUCCESS, "&c▪ &7开始游戏倒计时缩短！");
-        yml.addDefault(Messages.COMMAND_FORCESTART_NO_PERM, "{prefix}&7你不可以强制开始游戏！\n&7请考虑赞助以获取对应权限！");
+        yml.addDefault(Messages.COMMAND_FORCESTART_NO_PERM, "{prefix}&7你不可以强制开始游戏！\n&7请考虑赞助以得到对应权限！");
         yml.addDefault(Messages.COMMAND_COOLDOWN, "&c你不能这么做！ 请等待{seconds}秒！");
         yml.addDefault(Messages.ARENA_JOIN_VIP_KICK, "{prefix}&c抱歉，由于有一位赞助者加入该游戏，因此你被移出了该游戏。\n&a请考虑赞助以支持我们！ &7&o(点击查看)");
         yml.addDefault(Messages.ARENA_START_COUNTDOWN_STOPPED_INSUFF_PLAYERS_CHAT, "{prefix}&c玩家不足！ 倒计时取消！");
@@ -185,8 +185,8 @@ public class ChineseSimplified extends Language {
         yml.addDefault(Messages.INTERACT_BED_DESTROY_CHAT_ANNOUNCEMENT, "\n&f&l床被破坏 > {TeamColor}{TeamName}的床&7被{PlayerColor}{PlayerName}&7破坏了！\n");
         yml.addDefault(Messages.INTERACT_BED_DESTROY_TITLE_ANNOUNCEMENT, "&c床被破坏！");
         yml.addDefault(Messages.INTERACT_BED_DESTROY_SUBTITLE_ANNOUNCEMENT, "&f你不能再重生！");
-        yml.addDefault(Messages.INTERACT_BED_DESTROY_CHAT_ANNOUNCEMENT_TO_VICTIM, "&f&l床被破坏 > &7你的床被{PlayerColor}{PlayerName}&7破坏了！");
-        yml.addDefault(Messages.INTERACT_CHEST_CANT_OPEN_TEAM_ELIMINATED, "&c由于此队伍还未被团灭，你不能打开该团队箱子！");
+        yml.addDefault(Messages.INTERACT_BED_DESTROY_CHAT_ANNOUNCEMENT_TO_VICTIM, "&f&l床被破坏 > &7你的床被{PlayerColor}{PlayerName}&7破坏了！\n");
+        yml.addDefault(Messages.INTERACT_CHEST_CANT_OPEN_TEAM_ELIMINATED, "&c此队伍还未被团灭，你不能打开该团队箱子！");
         yml.addDefault(Messages.PLAYER_DIE_VOID_FALL_REGULAR_KILL, "{PlayerColor}{PlayerName}&7掉进了虚空。");
         yml.addDefault(Messages.PLAYER_DIE_VOID_FALL_FINAL_KILL, "{PlayerColor}{PlayerName}&7掉进了虚空。 &b&l最终击杀！");
         yml.addDefault(Messages.PLAYER_DIE_KNOCKED_IN_VOID_REGULAR_KILL, "{PlayerColor}{PlayerName}&7被{KillerColor}{KillerName}&7丢进了虚空。");
@@ -209,10 +209,10 @@ public class ChineseSimplified extends Language {
         yml.addDefault(Messages.PLAYER_DIE_DEBUG_FINAL_KILL, "{PlayerColor}{PlayerName}&7被{KillerColor}{KillerTeamName}&7的蠹虫杀死了！ &b&l最终击杀！");
         yml.addDefault(Messages.PLAYER_DIE_IRON_GOLEM_REGULAR, "{PlayerColor}{PlayerName}&7被{KillerColor}{KillerTeamName}&7的铁傀儡杀死了！");
         yml.addDefault(Messages.PLAYER_DIE_IRON_GOLEM_FINAL_KILL, "{PlayerColor}{PlayerName}&7被{KillerColor}{KillerTeamName}&7的铁傀儡杀死了！ &b&l最终击杀！");
-        yml.addDefault(Messages.PLAYER_DIE_REWARD_DIAMOND, "{prefix}&b+{amount} {meaning}");
-        yml.addDefault(Messages.PLAYER_DIE_REWARD_EMERALD, "{prefix}&a+{amount} {meaning}");
-        yml.addDefault(Messages.PLAYER_DIE_REWARD_IRON, "{prefix}&f+{amount} {meaning}");
-        yml.addDefault(Messages.PLAYER_DIE_REWARD_GOLD, "{prefix}&6+{amount} {meaning}");
+        yml.addDefault(Messages.PLAYER_DIE_REWARD_DIAMOND, "{prefix}&b+{amount}{meaning}");
+        yml.addDefault(Messages.PLAYER_DIE_REWARD_EMERALD, "{prefix}&a+{amount}{meaning}");
+        yml.addDefault(Messages.PLAYER_DIE_REWARD_IRON, "{prefix}&f+{amount}{meaning}");
+        yml.addDefault(Messages.PLAYER_DIE_REWARD_GOLD, "{prefix}&6+{amount}{meaning}");
         yml.addDefault(Messages.PLAYER_DIE_RESPAWN_TITLE, "&c你死了！");
         yml.addDefault(Messages.PLAYER_DIE_RESPAWN_SUBTITLE, "&e将在&a{time}&e秒后重生！");
         yml.addDefault(Messages.PLAYER_DIE_RESPAWN_CHAT, "{prefix}&e将在&a{time}&e秒后重生！");
@@ -240,7 +240,7 @@ public class ChineseSimplified extends Language {
         yml.addDefault(Messages.NPC_NAME_SOLO_UPGRADES, "&b单挑升级,&e&l右键点击");
         yml.addDefault(Messages.NPC_NAME_TEAM_SHOP, "&b队伍商店,&e&l右键点击");
         yml.addDefault(Messages.NPC_NAME_SOLO_SHOP, "&b单挑商店,&e&l右键点击");
-        yml.addDefault(Messages.TEAM_ELIMINATED_CHAT, "\n&f&l队伍团灭 > {TeamColor}{TeamName} &c已被团灭！\n");
+        yml.addDefault(Messages.TEAM_ELIMINATED_CHAT, "\n&f&l队伍团灭 > {TeamColor}{TeamName}&c已被团灭！\n");
         yml.addDefault(Messages.NEXT_EVENT_BEDS_DESTROY, "&c床被破坏");
         yml.addDefault(Messages.NEXT_EVENT_DIAMOND_UPGRADE_II, "&f钻石II级");
         yml.addDefault(Messages.NEXT_EVENT_DIAMOND_UPGRADE_III, "&f钻石III级");
@@ -279,7 +279,7 @@ public class ChineseSimplified extends Language {
         yml.addDefault("spectator-items-%path%-name".replace("%path%", "teleporter"), "&e传送");
         yml.addDefault("spectator-items-%path%-name".replace("%path%", "leave"), "&e回到大厅");
         yml.addDefault("spectator-items-%path%-lore".replace("%path%", "leave"), Collections.singletonList("&f右键离开游戏！"));
-        yml.addDefault(Messages.PLAYER_STATS_GUI_INV_NAME, "&8{player} 数据");
+        yml.addDefault(Messages.PLAYER_STATS_GUI_INV_NAME, "&8{player}的战绩");
         addDefaultStatsMsg(yml, "wins", "&6胜场数", "&f{wins}");
         addDefaultStatsMsg(yml, "losses", "&6失败场数", "&f{losses}");
         addDefaultStatsMsg(yml, "kills", "&6击杀数", "&f{kills}");
