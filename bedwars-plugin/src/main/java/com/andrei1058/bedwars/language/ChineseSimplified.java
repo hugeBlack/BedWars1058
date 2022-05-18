@@ -37,7 +37,7 @@ public class ChineseSimplified extends Language {
         yml.addDefault(Messages.COMMAND_JOIN_GROUP_OR_ARENA_NOT_FOUND, "{prefix}&c游戏{name}不存在！");
         yml.addDefault(Messages.COMMAND_JOIN_DENIED_IS_FULL, "{prefix}&c游戏已满！\n&a请考虑赞助以支持我们！ &7&o(点击查看)");
         yml.addDefault(Messages.COMMAND_JOIN_NO_EMPTY_FOUND, "{prefix}&c现在没有可用的游戏:(");
-        yml.addDefault(Messages.COMMAND_JOIN_DENIED_IS_FULL_OF_VIPS, "{prefix}&c很抱歉，虽我们已知道你已赞助，该游戏已满。\n&c该游戏中全是跟你一样的赞助者或管理员。");
+        yml.addDefault(Messages.COMMAND_JOIN_DENIED_IS_FULL_OF_VIPS, "{prefix}&c很抱歉，虽然我们已知道你已赞助，但该游戏已满。\n&c此游戏中全是赞助者或管理员。");
         yml.addDefault(Messages.COMMAND_JOIN_DENIED_PARTY_TOO_BIG, "{prefix}&c你的队伍人数太多了，不能作为一个队伍加入该游戏:(");
         yml.addDefault(Messages.COMMAND_JOIN_DENIED_NOT_PARTY_LEADER, "{prefix}&c只有队长才能选择游戏。");
         yml.addDefault(Messages.COMMAND_JOIN_PLAYER_JOIN_MSG, "{prefix}&7{player}&e加入了游戏(&b{on}&e/&b{max}&e)！");
