@@ -113,10 +113,10 @@ public class ChineseSimplified extends Language {
                 "&a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"));
         yml.addDefault(Messages.ARENA_JOIN_DENIED_SELECTOR, "{prefix}&c抱歉，你现在不能加入该游戏。右键来观赛！");
         yml.addDefault(Messages.ARENA_SPECTATE_DENIED_SELECTOR, "{prefix}&c抱歉，你现在不能观赛。右键来加入游戏！");
-        yml.addDefault(Messages.ARENA_JOIN_DENIED_NO_PROXY, "&c抱歉，你必须通过BedWarsProxy来加入该服务器。 \n&e如果你想设置地图，你可以给予自己 bw.setup 权限后加入服务器！");
+        yml.addDefault(Messages.ARENA_JOIN_DENIED_NO_PROXY, "&c抱歉，你必须通过BedWarsProxy来加入游戏。 \n&e如果你想设置游戏，你可以给予你自己 bw.setup 权限来直接进入服务器！");
         yml.addDefault(Messages.ARENA_SPECTATOR_TELEPORTER_GUI_NAME, "&8传送");
         yml.addDefault(Messages.ARENA_SPECTATOR_TELEPORTER_GUI_HEAD_NAME, "{vPrefix}{player}");
-        yml.addDefault(Messages.ARENA_SPECTATOR_TELEPORTER_GUI_HEAD_LORE, Arrays.asList("&7生命值： &f{health}%", "&7饱食度： &f{food}", "", "&7点击传送"));
+        yml.addDefault(Messages.ARENA_SPECTATOR_TELEPORTER_GUI_HEAD_LORE, Arrays.asList("&7生命值： &f{health}%", "&7饱食度： &f{food}", "", "&7左键传送"));
         yml.addDefault(Messages.ARENA_SPECTATOR_LEAVE_ITEM_NAME, "&c&l回到大厅");
         yml.addDefault(Messages.ARENA_SPECTATOR_LEAVE_ITEM_LORE, Collections.singletonList("&7右键离开起床战争大厅！"));
         yml.addDefault(Messages.ARENA_SPECTATOR_FIRST_PERSON_ENTER_TITLE, "&a正在旁观&7{player}");
@@ -349,7 +349,7 @@ public class ChineseSimplified extends Language {
         addContentMessages(yml, "invisibility", "potions-category", "{color}隐身药水(30秒)", Arrays.asList("&7花费： {cost} {currency}", "", "{quick_buy}", "{buy_status}"));
         addCategoryMessages(yml, "utility-category", "&8实用工具", "&a实用工具", Collections.singletonList("&e点击查看！"));
         addContentMessages(yml, "golden-apple", "utility-category", "{color}金苹果", Arrays.asList("&7花费： {cost} {currency}", "", "&7均衡治疗", "", "{quick_buy}", "{buy_status}"));
-        addContentMessages(yml, "bedbug", "utility-category", "{color}蠹虫", Arrays.asList("&7花费： {cost} {currency}", "", "&7在雪球落下的地方召唤蠹虫", "&7以达到干扰敌人的效果", "&7持续15秒。", "", "{quick_buy}", "{buy_status}"));
+        addContentMessages(yml, "bedbug", "utility-category", "{color}蠹虫", Arrays.asList("&7花费： {cost} {currency}", "", "&7在雪球落下的地方召唤蠹虫", "&7来干扰敌人", "&7持续15秒。", "", "{quick_buy}", "{buy_status}"));
         addContentMessages(yml, "dream-defender", "utility-category", "{color}梦境守卫者", Arrays.asList("&7花费： {cost} {currency}", "", "&7召唤铁傀儡来保护基地", "&7持续4分钟", "", "{quick_buy}", "{buy_status}"));
         addContentMessages(yml, "fireball", "utility-category", "{color}火球", Arrays.asList("&7花费： {cost} {currency}", "", "&7右键发射！", "&7把在窄桥上的敌人打下去！", "", "{quick_buy}", "{buy_status}"));
         addContentMessages(yml, "tnt", "utility-category", "{color}TNT", Arrays.asList("&7花费： {cost} {currency}", "", "&7立即点燃, 适合炸点东西", "", "{quick_buy}", "{buy_status}"));
