@@ -88,6 +88,7 @@ public class ShopManager extends ConfigManager {
         getYml().addDefault(ConfigPath.SHOP_SPECIAL_IRON_GOLEM_HEALTH, 100.0);
         getYml().addDefault(ConfigPath.SHOP_SPECIAL_IRON_GOLEM_DESPAWN, 240);
         getYml().addDefault(ConfigPath.SHOP_SPECIAL_IRON_GOLEM_SPEED, 0.25);
+        getYml().addDefault(ConfigPath.SHOP_SPECIAL_IRON_GOLEM_DAMAGE, 10);
 
         if (isFirstTime()) {
             //quick buy defaults

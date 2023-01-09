@@ -158,7 +158,7 @@ public abstract class VersionSupport {
     /**
      * Spawn a iron-golem for a team
      */
-    public abstract void spawnIronGolem(Location loc, ITeam team, double speed, double health, int despawn);
+    public abstract void spawnIronGolem(Location loc, ITeam team, double speed, double health, int despawn,double attackDamage);
 
     /**
      * Is despawnable entity

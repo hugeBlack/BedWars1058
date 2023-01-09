@@ -114,7 +114,7 @@ public class v1_13_R2 extends VersionSupport {
     }
 
     @Override
-    public void spawnIronGolem(Location loc, ITeam bedWarsTeam, double speed, double health, int despawn) {
+    public void spawnIronGolem(Location loc, ITeam bedWarsTeam, double speed, double health, int despawn,double attackDamage) {
         new Despawnable(IGolem.spawn(loc, bedWarsTeam, speed, health, despawn), bedWarsTeam, despawn, Messages.SHOP_UTILITY_NPC_IRON_GOLEM_NAME,
                 PlayerKillEvent.PlayerKillCause.IRON_GOLEM_FINAL_KILL, PlayerKillEvent.PlayerKillCause.IRON_GOLEM);
     }

@@ -39,6 +39,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import org.apache.commons.lang.StringUtils;
 import org.bukkit.Location;
+import org.bukkit.attribute.Attribute;
 import org.bukkit.craftbukkit.v1_18_R1.CraftWorld;
 import org.bukkit.craftbukkit.v1_18_R1.entity.CraftLivingEntity;
 import org.bukkit.craftbukkit.v1_18_R1.event.CraftEventFactory;
@@ -90,7 +91,7 @@ public class IGolem extends IronGolem {
         return team;
     }
 
-    public static LivingEntity spawn(Location loc, ITeam bedWarsTeam, double speed, double health, int despawn) {
+    public static LivingEntity spawn(Location loc, ITeam bedWarsTeam, double speed, double health, int despawn,double attackDamage) {
         ServerLevel mcWorld = ((CraftWorld) Objects.requireNonNull(loc.getWorld())).getHandle();
         IGolem customEnt = new IGolem(EntityType.IRON_GOLEM, mcWorld, bedWarsTeam);
         customEnt.setPos(loc.getX(), loc.getY(), loc.getZ());
@@ -98,6 +99,7 @@ public class IGolem extends IronGolem {
         ((CraftLivingEntity) customEnt.getBukkitEntity()).setRemoveWhenFarAway(false);
         Objects.requireNonNull(customEnt.getAttribute(Attributes.MAX_HEALTH)).setBaseValue(health);
         Objects.requireNonNull(customEnt.getAttribute(Attributes.MOVEMENT_SPEED)).setBaseValue(speed);
+        Objects.requireNonNull(customEnt.getAttribute(Attributes.ATTACK_DAMAGE)).setBaseValue(attackDamage);
 
         if (!CraftEventFactory.doEntityAddEventCalling(mcWorld, customEnt, CreatureSpawnEvent.SpawnReason.CUSTOM)){
             mcWorld.entityManager.addNewEntity(customEnt);
